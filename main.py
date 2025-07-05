@@ -340,7 +340,6 @@ async def post_daily_challenge():
         c = conn.cursor()
         c.execute("SELECT * FROM challenges WHERE approved = 1 ORDER BY RANDOM() LIMIT 1")
         user_challenge = c.fetchone()
-        conn.close()
         
         if user_challenge:
             challenge = {
@@ -350,11 +349,13 @@ async def post_daily_challenge():
             submitter = await bot.fetch_user(user_challenge[3])
             credit = f"\n\n*Submitted by {submitter.mention}*"
 
-            c.execute("DELETE FROM challenges WHERE id = ?", (challenge_id,))
+            c.execute("DELETE FROM challenges WHERE id = ?", (user_challenge[0],))
             conn.commit()
         else:
             challenge = generate_ai_challenge()
             credit = ""
+
+        conn.close()
         
         if not challenge:
             return
