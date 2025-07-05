@@ -22,8 +22,8 @@ A fun and interactive bot that posts daily challenges and tracks user participat
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/c2y5/daily-challenge-bot.git
-   cd daily-challenge-bot
+   git clone https://github.com/c2y5/DailyChallengeBot.git
+   cd DailyChallengeBot
    ```
 
 2. Install dependencies:
