@@ -3,9 +3,7 @@
 A fun and interactive bot that posts daily challenges and tracks user participation with XP rewards and streaks.
 (My goal of this project was to learn a bit about SQL)
 
-[Demo:](https://dailychallengebot.amsky.xyz/demo.mp4)
-
-<video src="https://dailychallengebot.amsky.xyz/demo.mp4" controls width="500"></video>
+[Watch Demo Video](https://dailychallengebot.amsky.xyz/demo.mp4)
 
 ## Features
 
