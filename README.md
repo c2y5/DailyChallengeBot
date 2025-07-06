@@ -72,9 +72,6 @@ A fun and interactive bot that posts daily challenges and tracks user participat
 - Modify XP rewards in line `209` function
 - Change posting time in line `385`
 
-## License
-MIT License - Free to use and modify
-
 ---
 
 ## License
